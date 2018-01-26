@@ -9,7 +9,7 @@ Demo: http://michaelrausch.nz
 3. Add environment variables (src/environments/)
 4. `$ ng serve`
 
-## General Structure
+## Structure Overview
 
 | Directory                     | Contents              |
 | --------------------          |-----------------------|
