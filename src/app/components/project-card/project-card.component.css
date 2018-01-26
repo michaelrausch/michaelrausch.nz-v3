@@ -1,0 +1,16 @@
+.card-button{
+    background-color: #fff;
+    color: #2a4bfe !important;
+    border-color: #2a4bfe;
+    font-family: 'Work Sans',  sans-serif;
+    font-weight: 500;
+}
+
+.card-button:focus {
+    background-color: #fff;
+    box-shadow: 0px;
+}
+
+p{
+    font-family: 'Work Sans',  sans-serif;    
+}

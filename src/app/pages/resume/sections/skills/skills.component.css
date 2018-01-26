@@ -1,0 +1,17 @@
+table td{
+    padding-right: 80px;
+}
+
+table {
+    font-family: 'Work Sans',  sans-serif;    
+}
+
+table tr th{
+    font-weight: 700;
+    color: #242424;
+}
+
+table tr td{
+    font-weight: 400;
+    color: #242424;    
+}

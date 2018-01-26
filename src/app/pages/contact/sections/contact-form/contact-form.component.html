@@ -1,0 +1,48 @@
+<h3>Let's talk</h3>
+
+<app-alert alertType="alert-danger" *ngIf="showError">
+  Sorry {{ sendersName }}, i couldn't send your message, please email me instead.
+</app-alert>
+
+<app-alert alertType="alert-success" *ngIf="showSuccess">
+  Thanks {{ sendersName }}, I'll get back to you as soon as possible.
+</app-alert>
+
+<form #contactForm="ngForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="nameInput">Name</label>
+    <input type="text" class="form-control invalid" placeholder="Joe Bloggs" id="nameInput" name="name" [(ngModel)]="name" #nameInput="ngModel" required="">
+
+    <small class="text-muted" *ngIf="nameInput.errors && (nameInput.dirty || nameInput.touched)">
+      You must enter a name
+    </small>
+  </div>
+
+  <div class="form-group">
+    <label for="emailInput">Email</label>
+    <input type="email" class="form-control" placeholder="example@example.com" id="emailInput" name="email" [(ngModel)]="email" #emailInput="ngModel" required="" email>
+
+    <small class="text-muted" *ngIf="emailInput.errors && (emailInput.dirty || emailInput.touched)">
+      <div *ngIf="emailInput.errors.required">You must enter an email</div>
+      <div *ngIf="!emailInput.errors.required && emailInput.errors.email">You must enter a valid email</div>
+    </small>
+  </div>
+
+  <div class="form-group">
+      <label for="messageInput">Message</label>            
+      <textarea name="contactMessage" id="messageInput" cols="30" rows="5" class="form-control" [(ngModel)]="message" required="" #messageInput="ngModel"></textarea>    
+      
+      <small class="text-muted" *ngIf="messageInput.errors && (messageInput.dirty || messageInput.touched)">
+        <div *ngIf="messageInput.errors.required">You must enter a message</div>
+      </small>
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="!contactForm.form.valid || sendingMessage">
+    <div *ngIf="!sendingMessage">Send</div> 
+
+    <div *ngIf="sendingMessage">
+        Sending
+        <span><i class="fa fa-spinner fa-pulse"></i></span>                
+    </div>
+  </button>
+</form>

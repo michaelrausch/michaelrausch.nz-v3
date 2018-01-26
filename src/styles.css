@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.alert-danger {
+    color: #78281f;
+    background-color: #fadbd8;
+    border-color: #f8cdc8;
+  }
+  
+  .alert-danger hr {
+    border-top-color: #f5b8b1;
+  }
+  
+  .alert-danger .alert-link {
+    color: #4f1a15;
+  }
+
+  .alert-success {
+    color: #0c6251;
+    background-color: #d1f2eb;
+    border-color: #beece3;
+  }
+  
+  .alert-success hr {
+    border-top-color: #aae6db;
+  }
+  
+  .alert-success .alert-link {
+    color: #06352b;
+  }
+
+  .bottom-pad{
+      padding-bottom: 170px;
+  }
+
+  .link{
+      color: #2a4bfe;
+  }
+
+/* NEW */
+
+/**
+* Headings 
+*/
+
+h2{
+    font-family: 'Work Sans', sans-serif !important;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-family: 'Work Sans', sans-serif !important;
+    font-weight: 600;
+    font-size: 24px;    
+}
+
+h5{
+    font-family: 'Work Sans',  sans-serif;
+    color: #242424;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.bold-content-head {
+    font-size: 30px;
+    font-weight: 700;
+}

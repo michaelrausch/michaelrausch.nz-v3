@@ -1,0 +1,10 @@
+h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.cta-buttons{
+    width: 400px;
+    padding-top: 40px;
+    margin: 0 auto -70px auto;
+}

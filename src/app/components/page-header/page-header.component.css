@@ -1,0 +1,21 @@
+.page-header{
+    height: 150px;
+    background-color: rgb(97,101,249);
+    padding-top: 60px;
+    box-shadow: 0 3px 70px rgba(50, 50, 50, 0.5);   
+    
+    background: #396afc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900; 
+    color: white;
+    font-size: 50px;
+    width:1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+}

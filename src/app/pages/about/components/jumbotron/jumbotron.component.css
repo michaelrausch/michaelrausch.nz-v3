@@ -1,0 +1,57 @@
+.jumbotron{
+    height: 500px;
+    background-color: rgb(97,101,249);
+    border-radius: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    background: #396afc; 
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc);  
+    background: linear-gradient(to right, #2948ff, #396afc); 
+    /* background: #00c6ff;
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
+                                                                    
+}
+
+h1{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900; 
+    color: white;
+    font-size: 70px;
+    width: 550px;
+    margin: 50px auto 0 auto ;
+}
+
+.cta{
+    height: 50px;
+    width:400px;
+    margin: 50px auto 0 auto;
+}
+
+.cta a{
+    color: white;
+    width: 170px;
+    height: 55px;
+
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 7px;
+
+    border: 4px solid white;
+
+    transition: color .3s, background-color .3s;
+}
+
+.cta a:hover{
+    color: black;
+    border-color: white;
+    background-color: white;
+    text-decoration: none;
+}
+

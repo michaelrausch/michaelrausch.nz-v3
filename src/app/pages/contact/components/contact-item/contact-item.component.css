@@ -1,0 +1,20 @@
+.contact-item{
+    padding-bottom: 30px;
+    padding-top: 10px;
+    width: 400px;
+}
+
+.contact-item i{
+    width: 40px;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(136, 136, 136);
+}
+
+.contact-info{
+    margin-left: 60px;
+    font-family: 'Work Sans',  sans-serif;
+    font-weight: 500;
+    color: #363636;
+    padding-top: 4px;
+} 

@@ -1,0 +1,14 @@
+nav{
+    background-color: rgba(0,0,0,0) !important;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.nav-link {
+    color: white !important;
+    font-family: 'Work Sans',  sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 20px;
+}
