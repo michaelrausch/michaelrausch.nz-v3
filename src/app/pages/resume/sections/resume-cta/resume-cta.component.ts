@@ -13,7 +13,7 @@ export class ResumeCtaComponent implements OnInit {
   ngOnInit() {
   }
 
-  goToLinkedIn(){
-    window.open(environment.contact.linkedIn, '_blank');
+  openBitbucket(){
+    window.open(environment.social.bitbucket, '_blank');
   }
 }
