@@ -1,9 +1,11 @@
-<form (ngSubmit)="doSearch(query)">
-  <div class="input-group mb-3">
-    <div class="input-group-addon">
-      <span class="input-group-text fa fa-google"></span>
+<div class="search-container">
+  <form (ngSubmit)="doSearch(query)">
+    <div class="input-group mb-3">
+      <div class="input-group-addon">
+        <span class="input-group-text fa fa-google"></span>
+      </div>
+      
+      <input type="text" class="form-control" #query placeholder="Search">
     </div>
-    
-    <input type="text" class="form-control" #query placeholder="Search">
-  </div>
-</form>
+  </form>  
+</div>
