@@ -1,6 +1,7 @@
 # michaelrausch.nz
 
 Demo: http://michaelrausch.nz
+https://jira.michaelrausch.nz/projects/MRNZWEB/issues
 
 ## Installation
 1. Install [NodeJS & NPM](https://nodejs.org/en/)
