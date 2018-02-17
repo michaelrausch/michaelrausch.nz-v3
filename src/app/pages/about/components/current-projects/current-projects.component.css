@@ -2,3 +2,9 @@
     margin-bottom: 100px;
     margin-top: 30px;
 }
+
+@media only screen and (max-width: 770px) {
+    .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
