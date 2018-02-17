@@ -32,6 +32,7 @@ import { ResumeCtaComponent } from './pages/resume/sections/resume-cta/resume-ct
 import { ContactItemComponent } from './pages/contact/components/contact-item/contact-item.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { environment } from '../environments/environment';
+import { SocialIconComponent } from './pages/contact/sections/social-icon/social-icon.component';
 
 const routes: Routes = [
   { path: '', component: AboutPageComponent},
@@ -66,7 +67,8 @@ const routes: Routes = [
     FeaturedProjectsComponent,
     ResumeCtaComponent,
     ContactItemComponent,
-    AlertComponent
+    AlertComponent,
+    SocialIconComponent
   ],
   imports: [
     BrowserModule,
