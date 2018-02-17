@@ -33,11 +33,15 @@ import { ContactItemComponent } from './pages/contact/components/contact-item/co
 import { AlertComponent } from './components/alert/alert.component';
 import { environment } from '../environments/environment';
 import { SocialIconComponent } from './pages/contact/sections/social-icon/social-icon.component';
+import { HomePageComponent } from './pages/home/home-page/home-page.component';
+import { GoogleSearchComponent } from './pages/home/components/google-search/google-search.component';
+import { WidgetComponent } from './pages/home/components/widget/widget.component';
 
 const routes: Routes = [
   { path: '', component: AboutPageComponent},
   { path: 'resume', component: ResumePageComponent},
-  { path: 'contact', component: ContactPageComponent}
+  { path: 'contact', component: ContactPageComponent},
+  { path: 'home', component: HomePageComponent}
 ]
 
 @NgModule({
@@ -68,7 +72,10 @@ const routes: Routes = [
     ResumeCtaComponent,
     ContactItemComponent,
     AlertComponent,
-    SocialIconComponent
+    SocialIconComponent,
+    HomePageComponent,
+    GoogleSearchComponent,
+    WidgetComponent
   ],
   imports: [
     BrowserModule,
