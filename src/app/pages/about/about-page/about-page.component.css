@@ -1,0 +1,11 @@
+@media only screen and (max-width: 468px) {
+    h2 {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .bottom-pad {
+        padding-bottom: 20px;
+    }
+}

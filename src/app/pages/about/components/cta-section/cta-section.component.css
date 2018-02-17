@@ -6,3 +6,11 @@
 .cta-section{
     padding-top: 90px;
 }
+
+@media only screen and (max-width: 420px) {
+    .cta-section {
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+    }
+}

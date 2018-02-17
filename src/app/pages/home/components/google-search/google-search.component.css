@@ -19,3 +19,11 @@ span.input-group-text{
     width: 35px;
     font-size: 25px;
 }
+
+@media only screen and (max-width: 755px) {
+    form{
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
