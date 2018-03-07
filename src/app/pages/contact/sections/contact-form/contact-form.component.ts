@@ -38,9 +38,9 @@ export class ContactFormComponent implements OnInit {
     this.startTimeout();
 
     this.http.post(environment.api_url, {
-      ReturnEmail: this.email,
-      ReturnName: this.name,
-      Message: this.message
+      fromEmail: this.email,
+      name: this.name,
+      message: this.message
     }).subscribe(() => {
       this.setSuccess()
       this.clearForm()

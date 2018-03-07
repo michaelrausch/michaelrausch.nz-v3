@@ -15,18 +15,6 @@ export class AppComponent {
     
   }
 
-  /**
-   * Perform a request to the contact API,
-   * 
-   * This is required if you are using a free Azure or Heroku
-   * plan that puts an application to sleep after a period of 
-   * inactivity. This will ensure the application is awake before
-   * the contact form is used
-   */
-  checkApiUrl(){
-    this.http.get(environment.api_url).subscribe();
-  }
-
   printVersionInfo(){
       console.log("App Version: " + environment.version.app)
       console.log("Production: " + environment.production)
@@ -41,7 +29,6 @@ export class AppComponent {
         window.scrollTo(0, 0)
     });
 
-    this.checkApiUrl();
     this.printVersionInfo();
 }
 }
