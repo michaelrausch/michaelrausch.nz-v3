@@ -20,7 +20,7 @@ export class HomePageComponent implements OnInit {
     var months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')
 
     
-    this.dateString = weekdays[today.getDay()] + " " + today.getDate() + this.getDaySuffix(today.getDay()) +  ", " + this.getTimeString(today);;
+    this.dateString = weekdays[today.getDay()] + " " + today.getDate() + this.getDaySuffix(today.getDate()) +  ", " + this.getTimeString(today);;
 
   }
 
