@@ -1,8 +1,20 @@
-<div class="project-card card">
+<div class="project-card card hvr-grow">
+  <img class="card-img-top" [src]="featImg ? featImg : '/assets/images/placeholder.png'" alt="Card image cap">
   <div class="card-body">
     <h3 class="card-title">{{ title || "Title"}}</h3>
-    <p class="card-text">{{ desc || "Desc" }}</p>
-    <a class="btn btn-primary card-link card-button" [href]="url" target="_blank">See More</a>
+
+    <!--  class="badge badge-learning"-->
+    <span [ngClass]="{
+        'badge-learning': category == 'learning',
+        'badge-project': category == 'group project',
+        'badge-assignment': category == 'assignment',
+        'badge':'true',
+        'badge-pill': 'false'
+      }">{{ category || ""}}</span>
+
+      <p class="card-text">{{ desc || "" }}</p>
+
+      <a class="btn btn-primary card-link card-button" data-toggle="modal" [attr.data-target]="'#' + modal" (click)="btnClicked()">See More</a>
   </div>
 </div>
 

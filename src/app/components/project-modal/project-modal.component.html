@@ -1,0 +1,39 @@
+<div class="modal fade" [attr.id]="modalId" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">{{ title || "Modal"}}</h1>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <ng-content></ng-content>
+        </div>
+      </div>
+
+      <div class="modal-download-section">
+        <div class="container">
+          <div class="cta-button-container row">
+              <div class="dl-link col-md-6">
+                  <a [href]="downloadUrl" target="_blank" class="">
+                    <i class="fa fa-download hvr-grow"></i>
+                    <div class="link-text">Download</div> 
+                  </a>
+              </div>
+        
+              <div class="dl-link col-md-6">
+                  <a [href]="sourceUrl" target="_blank" class="">
+                    <i class="fa fa-code hvr-grow"></i>
+                    <div class="link-text">View Source</div> 
+                  </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

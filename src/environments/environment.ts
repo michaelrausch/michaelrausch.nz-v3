@@ -5,13 +5,18 @@
 
 export const environment = {
   production: true,
-  api_url: "https://google.com",
-  google_maps_api_url: "https://google.com",
-  contact: {
-    linkedIn: "https://google.com"
+  api_url: "https://api.michaelrausch.nz/contact",
+  google_maps_api_url: "https://maps.google.com/maps/api/js?key=AIzaSyA22kfHDqa24r-eCqNI9lWkWXpYfvMgMDU",
+  cv_download: "/assets/Michael_Rausch_CV.pdf",
+  social: {
+    bitbucket: "https://bitbucket.org/michaelrausch",
+    linkedin: "https://www.linkedin.com/in/michael-rausch-13445b8a/",
+    facebook: "https://www.facebook.com/michael.rausch123",
+    px500: "https://500px.com/michael_rausch",
+    twitter: "https://twitter.com/michaelrausch_"
   },
   version: {
-    app: "1D0001",
-    api: "1A0035"
+    app: "1D0005",
+    api: "2B0001"
   }
 };

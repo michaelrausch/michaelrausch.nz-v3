@@ -23,7 +23,9 @@ export class ContactFormComponent implements OnInit {
   */
   showError = false;
   showSuccess = false;
+  showValidationError = false;
   sendingMessage = false;
+  alertClass = "alert-success"
 
   MESSAGE_TIMEOUT = 5000;
 
@@ -34,16 +36,27 @@ export class ContactFormComponent implements OnInit {
 
   onSubmit(){
     this.sendingMessage = true;
+    this.showValidationError = false;
+    this.showError = false;
+    
     this.setSendersName();
     this.startTimeout();
 
-    this.http.post(environment.api_url, {
+    this.http.post<ContactFormResponse>(environment.api_url, {
       fromEmail: this.email,
       name: this.name,
       message: this.message
-    }).subscribe(() => {
-      this.setSuccess()
-      this.clearForm()
+    }).subscribe((response) => {
+
+      if (response.error && response.result === "Validation Error") {
+        this.showValidationError = true;
+        this.setFail()
+      }
+      else{
+        this.setSuccess()
+        this.clearForm()  
+      }
+
       this.sendingMessage = false
     }, () => {
       this.setFail();
@@ -70,6 +83,7 @@ export class ContactFormComponent implements OnInit {
   setSuccess(){
     this.showError = false;
     this.showSuccess = true;
+    this.alertClass = "alert-success"
   }
 
   /**
@@ -78,6 +92,7 @@ export class ContactFormComponent implements OnInit {
   setFail(){
     this.showError = true;
     this.showSuccess = false;
+    this.alertClass = "alert-danger"
   }
 
   showTimeoutError(){
@@ -92,4 +107,9 @@ export class ContactFormComponent implements OnInit {
     this.name = ""
     this.message = ""
   }
+}
+
+interface ContactFormResponse{ 
+  error: boolean;
+  result: string;
 }

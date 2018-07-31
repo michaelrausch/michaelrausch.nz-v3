@@ -1,5 +1,38 @@
 <div class="row">
-  <app-project-card class="col-md-4" title="Party Parrots At Sea" desc="A fun 3D sailing simulator built as a full-year team project." url="https://github.com/haomingyin/partyparrot-at-sea"></app-project-card>
-  <app-project-card class="col-md-4" title="Thingstarter" desc="A Kickstarter clone, built using Angular2 and Sails.js." url="http://365.heroku.michaelrausch.nz"></app-project-card>
-  <app-project-card class="col-md-4" title="This Website" desc="A complete rebuild of my existing website." url="https://michaelrausch.nz"></app-project-card>
+  <app-project-card class="col-md-4" 
+                    title="Party Parrots At Sea" 
+                    desc="A fun 3D sailing simulator built as a full-year team project." 
+                    modal="" 
+                    url="https://bitbucket.org/michaelrausch/party-parrots-at-sea"
+                    featImg="/assets/images/ppac.png"
+                    category="group project"></app-project-card>
+  
+  <app-project-card class="col-md-4" 
+                    title="Thingstarter" 
+                    desc="A Kickstarter clone, built using Angular 4 and Sails.js."
+                    modal="" 
+                    url="http://365.heroku.michaelrausch.nz"
+                    featImg="/assets/images/tsbg.png"
+                    category="assignment"></app-project-card>
+  
+  <app-project-card class="col-md-4" 
+                    title="WatchOS 4 App Development Essentials" 
+                    desc="Learning WatchOS principles, UI objects, navigation, and testing." 
+                    url="https://www.lynda.com/watchOS-tutorials/Apple-watchOS-4-App-Development-Essential-Training/642475-2.html"
+                    featImg="/assets/images/642475-636474734423813636-16x9.jpg"
+                    category="learning"></app-project-card>
 </div>
+
+<app-project-modal modalId="ppac-project-modal" title="Party Parrots At Sea" downloadUrl="https://bitbucket.org/michaelrausch/party-parrots-at-sea" sourceUrl="https://bitbucket.org/michaelrausch/party-parrots-at-sea">
+    <!-- <h2 class="project-subheading">Party Parrots At Sea</h2>
+    <p class="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nemo delectus ducimus molestiae optio amet consequuntur porro quo debitis minus accusantium vel nam omnis, doloremque eum saepe, sapiente, culpa ut.</p> -->
+
+    <app-youtube-embed videoId="aHxJsfZLg54"></app-youtube-embed>
+</app-project-modal>
+
+<app-project-modal modalId="ts-project-modal" title="ThingStarter" downloadUrl="http://365.heroku.michaelrausch.nz" sourceUrl="http://365.heroku.michaelrausch.nz">
+    <!-- <h2 class="project-subheading">ThingStarter</h2>
+    <p class="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nemo delectus ducimus molestiae optio amet consequuntur porro quo debitis minus accusantium vel nam omnis, doloremque eum saepe, sapiente, culpa ut.</p> -->
+
+    <app-youtube-embed videoId="2f72-ErFgdY"></app-youtube-embed>
+</app-project-modal>

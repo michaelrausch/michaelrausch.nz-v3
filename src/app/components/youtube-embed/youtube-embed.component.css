@@ -1,0 +1,12 @@
+.yt-container{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.yt-container iframe{
+    height: 380px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 3px 70px rgba(50, 50, 50, 0.5);  
+
+}

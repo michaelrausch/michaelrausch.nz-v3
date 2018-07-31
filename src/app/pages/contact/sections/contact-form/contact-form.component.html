@@ -1,11 +1,19 @@
 <h3>Let's talk</h3>
 
-<app-alert alertType="alert-danger" *ngIf="showError">
-  Sorry {{ sendersName }}, i couldn't send your message, please email me instead.
-</app-alert>
+<app-alert [alertType]="alertClass" *ngIf="showError || showSuccess">
+  <div *ngIf="showError && !showValidationError">
+      Sorry {{ sendersName }}, i couldn't send your message, please email me instead.
+  </div>
 
-<app-alert alertType="alert-success" *ngIf="showSuccess">
-  Thanks {{ sendersName }}, I'll get back to you as soon as possible.
+  <div *ngIf="showError && showValidationError">
+      You have entered an invalid email address.
+  </div>
+
+  <div *ngIf="showSuccess">
+      Thanks {{ sendersName }}, I'll get back to you as soon as possible.
+  </div>
+
+
 </app-alert>
 
 <form #contactForm="ngForm" (ngSubmit)="onSubmit()">

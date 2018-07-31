@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-footer',
@@ -6,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+  bitbucketUrl = environment.social.bitbucket
+  linkedinUrl = environment.social.linkedin
+  facebookUrl = environment.social.facebook
+  twitterUrl = environment.social.twitter
+  px500Url = environment.social.px500
 
   constructor() { }
 

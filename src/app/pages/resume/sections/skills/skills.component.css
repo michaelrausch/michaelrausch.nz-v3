@@ -1,5 +1,5 @@
 table td{
-    padding-right: 80px;
+    padding-right: 75px;
 }
 
 table {
@@ -14,4 +14,5 @@ table tr th{
 table tr td{
     font-weight: 400;
     color: #242424;    
+    padding-top: 5px;
 }

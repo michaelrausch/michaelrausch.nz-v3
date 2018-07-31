@@ -16,4 +16,8 @@ export class ResumeCtaComponent implements OnInit {
   openBitbucket(){
     window.open(environment.social.bitbucket, '_blank');
   }
+
+  downloadCv(){
+    window.open(environment.cv_download, '_blank');
+  }
 }

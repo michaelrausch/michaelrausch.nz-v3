@@ -82,3 +82,50 @@ h5{
     -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
     transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
+
+.grad-red-bg {
+    background: #D31027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EA384D, #D31027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EA384D, #D31027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.grad-blue-bg {
+    background: #396afc; 
+    background: -webkit-linear-gradient(to right, #2948ff, #537cf5);  
+    background: linear-gradient(to right, #2948ff, #537cf5); 
+}
+
+.project-subheading {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 600; 
+    margin-bottom: 10px;
+    padding: 0 !important;
+}
+
+.project-paragraph {
+    font-family: 'Work Sans',  sans-serif;
+    color: #6b7c93;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+/**
+    Custom Badge Styles
+**/
+
+.badge-learning {
+    background-color: rgb(255, 193, 7);
+    color: white;
+}
+
+.badge-project{
+    background-color: rgb(40, 167, 69);
+    color: white;
+}
+
+.badge-assignment{
+    background-color: rgb(0, 123, 255);
+    color: white;
+}

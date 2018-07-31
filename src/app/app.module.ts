@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NguiMapModule} from '@ngui/map';
+import { MatomoModule } from 'ngx-matomo';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -36,12 +37,24 @@ import { SocialIconComponent } from './pages/contact/sections/social-icon/social
 import { HomePageComponent } from './pages/home/home-page/home-page.component';
 import { GoogleSearchComponent } from './pages/home/components/google-search/google-search.component';
 import { WidgetComponent } from './pages/home/components/widget/widget.component';
+import { ProjectPageComponent } from './pages/project/project-page/project-page.component';
+import { CtaBlockComponent } from './pages/project/components/cta-block/cta-block.component';
+import { ShowcaseImageWideComponent } from './pages/project/components/showcase-image-wide/showcase-image-wide.component';
+
+import { ParticlesModule } from 'angular-particle';
+import { Seng404BlogPostComponent } from './pages/project/project-pages/seng404-blog-post/seng404-blog-post.component';
+import { ProjectModalComponent } from './components/project-modal/project-modal.component';
+import { YoutubeEmbedComponent } from './components/youtube-embed/youtube-embed.component';
+import { Error404Component } from './pages/Error404/Error404.component';
 
 const routes: Routes = [
   { path: '', component: AboutPageComponent},
   { path: 'resume', component: ResumePageComponent},
   { path: 'contact', component: ContactPageComponent},
-  { path: 'home', component: HomePageComponent}
+  { path: 'home', component: HomePageComponent},
+  { path: 'project/hard-times', component: ProjectPageComponent},
+  { path: 'project/requirements-blog-post', component: Seng404BlogPostComponent},
+  { path: "**", component: Error404Component}
 ]
 
 @NgModule({
@@ -75,14 +88,23 @@ const routes: Routes = [
     SocialIconComponent,
     HomePageComponent,
     GoogleSearchComponent,
-    WidgetComponent
+    WidgetComponent,
+    ProjectPageComponent,
+    CtaBlockComponent,
+    ShowcaseImageWideComponent,
+    Seng404BlogPostComponent,
+    ProjectModalComponent,
+    YoutubeEmbedComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     FormsModule,
     HttpClientModule,
-    NguiMapModule.forRoot({apiUrl: environment.google_maps_api_url})
+    NguiMapModule.forRoot({apiUrl: environment.google_maps_api_url}),
+    ParticlesModule,
+    MatomoModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
