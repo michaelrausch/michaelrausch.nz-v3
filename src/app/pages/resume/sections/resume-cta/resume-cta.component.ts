@@ -13,8 +13,8 @@ export class ResumeCtaComponent implements OnInit {
   ngOnInit() {
   }
 
-  openBitbucket(){
-    window.open(environment.social.bitbucket, '_blank');
+  openGithub(){
+    window.open(environment.social.github, '_blank');
   }
 
   downloadCv(){

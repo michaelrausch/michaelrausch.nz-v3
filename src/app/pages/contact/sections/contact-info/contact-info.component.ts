@@ -7,9 +7,10 @@ import { environment } from '../../../../../environments/environment';
   styleUrls: ['./contact-info.component.css']
 })
 export class ContactInfoComponent implements OnInit {
-  bitbucketUrl = environment.social.bitbucket
+  githubUrl = environment.social.github
   linkedinUrl = environment.social.linkedin
   facebookUrl = environment.social.facebook
+  px500Url = environment.social.px500
 
   constructor() { }
 

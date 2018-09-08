@@ -10,7 +10,7 @@ export const environment = {
   employer_content_url: "",
   cv_download: "",
   social: {
-    bitbucket: "",
+    github: "",
     linkedin: "",
     facebook: "",
     px500: "",
