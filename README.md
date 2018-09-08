@@ -1,7 +1,5 @@
 # michaelrausch.nz
 
-[![Build Status](https://travis-ci.com/michaelrausch/michaelrausch.nz.svg?branch=master)](https://travis-ci.com/michaelrausch/michaelrausch.nz)
-
 Demo: http://michaelrausch.nz
 https://jira.michaelrausch.nz/projects/MRNZWEB/issues
 
@@ -22,3 +20,5 @@ https://jira.michaelrausch.nz/projects/MRNZWEB/issues
 | /app/pages/:page/             | . |
 | /app/pages/:page/components   | Components related to a specific page |
 | /app/pages/:page/sections     | Most pages are split up into sections, these are stored here. |
+
+![michaelrausch.nz](https://static.michaelrausch.nz/image/github/michaelrausch_nz.png)
