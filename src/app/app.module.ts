@@ -46,6 +46,7 @@ import { Seng404BlogPostComponent } from './pages/project/project-pages/seng404-
 import { ProjectModalComponent } from './components/project-modal/project-modal.component';
 import { YoutubeEmbedComponent } from './components/youtube-embed/youtube-embed.component';
 import { Error404Component } from './pages/Error404/Error404.component';
+import { EmployerPageComponent } from './pages/employer-page/employer-page.component';
 
 const routes: Routes = [
   { path: '', component: AboutPageComponent},
@@ -54,6 +55,7 @@ const routes: Routes = [
   { path: 'home', component: HomePageComponent},
   { path: 'project/hard-times', component: ProjectPageComponent},
   { path: 'project/requirements-blog-post', component: Seng404BlogPostComponent},
+  { path: 'e/:id', component: EmployerPageComponent },
   { path: "**", component: Error404Component}
 ]
 
@@ -95,7 +97,8 @@ const routes: Routes = [
     Seng404BlogPostComponent,
     ProjectModalComponent,
     YoutubeEmbedComponent,
-    Error404Component
+    Error404Component,
+    EmployerPageComponent
   ],
   imports: [
     BrowserModule,

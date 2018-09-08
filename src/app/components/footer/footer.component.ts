@@ -7,7 +7,7 @@ import { environment } from '../../../environments/environment';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  bitbucketUrl = environment.social.bitbucket
+  githubUrl = environment.social.github
   linkedinUrl = environment.social.linkedin
   facebookUrl = environment.social.facebook
   twitterUrl = environment.social.twitter
