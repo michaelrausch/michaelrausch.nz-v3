@@ -1,5 +1,7 @@
 # michaelrausch.nz
 
+[![Build Status](https://travis-ci.com/michaelrausch/michaelrausch.nz.svg?branch=master)](https://travis-ci.com/michaelrausch/michaelrausch.nz)
+
 Demo: http://michaelrausch.nz
 https://jira.michaelrausch.nz/projects/MRNZWEB/issues
 
