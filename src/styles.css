@@ -121,7 +121,12 @@ h5{
 }
 
 .badge-project{
-    background-color: rgb(40, 167, 69);
+    background-color: rgb(221, 138, 13);
+    color: white;
+}
+
+.badge-group-project{
+    background-color: rgb(40, 167, 68);
     color: white;
 }
 
