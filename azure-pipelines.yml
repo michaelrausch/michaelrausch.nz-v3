@@ -11,6 +11,22 @@ steps:
   inputs:
     versionSpec: '8.x'
   displayName: 'Install Node.js'
+  
+- task DownloadSecureFile@1
+  inputs:
+    secureFile: environment.ts
+    
+- task DownloadSecureFile@2
+  inputs:
+    secureFile: environment.prod.ts
+
+- task CopyFiles@2
+  inputs:
+    sourceFolder: $(Agent.TempDirectory)
+    Contents: |
+      environment.ts
+      environemts.prod.ts
+    TargetFolder: '$(Build.SourcesDirectory)/src/environments'
 
 - script: |
     npm install
