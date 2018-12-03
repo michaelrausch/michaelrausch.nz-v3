@@ -32,10 +32,16 @@ steps:
     npm install
     npm run build-prod
   displayName: 'npm install and build'
+ 
+- task: SSH@0
+  inputs:
+    sshEndpoint: sydney1
+    runOptions: commands
+    commands: cd /usr/share/nginx/www/michaelrausch.nz/ ; rm -f *.bundle.js
   
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: sydney1
     sourceFolder: dist/
-    targetFolder: /usr/share/nginx/www/michaelrausch.nz/test/
+    targetFolder: /usr/share/nginx/www/michaelrausch.nz/
   
