@@ -1,34 +1,30 @@
-# Node.js
-# Build a general Node.js project with npm.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
-pool:
-  vmImage: 'Ubuntu 16.04'
-
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '8.x'
-  displayName: 'Install Node.js'
-  
-- task DownloadSecureFile@1
-  inputs:
-    secureFile: environment.ts
-    
-- task DownloadSecureFile@2
-  inputs:
-    secureFile: environment.prod.ts
-
-- task CopyFiles@2
-  inputs:
-    sourceFolder: $(Agent.TempDirectory)
-    Contents: |
-      environment.ts
-      environemts.prod.ts
-    TargetFolder: '$(Build.SourcesDirectory)/src/environments'
-
-- script: |
-    npm install
-    npm run build-prod
-  displayName: 'npm install and build'
+--- 
+pool: 
+  vmImage: "Ubuntu 16.04"
+steps: 
+  - 
+    displayName: "Install Node.js"
+    inputs: 
+      versionSpec: 8.x
+    task: NodeTool@0
+  - 
+    inputs: 
+      secureFile: environment.ts
+    task: DownloadSecureFile@1
+  - 
+    inputs: 
+      secureFile: environment.prod.ts
+    task: DownloadSecureFile@2
+  - 
+    inputs: 
+      Contents: |
+          environment.ts
+          environemts.prod.ts
+      TargetFolder: $(Build.SourcesDirectory)/src/environments
+      sourceFolder: $(Agent.TempDirectory)
+    task: CopyFiles@2
+  - 
+    displayName: "npm install and build"
+    script: |
+        npm install
+        npm run build-prod
