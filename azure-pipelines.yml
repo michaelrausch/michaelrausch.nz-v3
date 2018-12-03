@@ -34,7 +34,8 @@ steps:
   displayName: 'npm install and build'
   
 - task: CopyFilesOverSSH@0
-  sshEndpoint: sydney1
-  sourceFolder: dist/
-  targetFolder: /usr/share/nginx/www/michaelrausch.nz/test/
+  inputs:
+    sshEndpoint: sydney1
+    sourceFolder: dist/
+    targetFolder: /usr/share/nginx/www/michaelrausch.nz/test/
   
