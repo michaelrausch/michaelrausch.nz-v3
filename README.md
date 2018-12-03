@@ -1,7 +1,9 @@
 # michaelrausch.nz
 
+[![Build Status](https://dev.azure.com/Michael-Rausch/michaelrausch.nz/_apis/build/status/michaelrausch.michaelrausch.nz)](https://dev.azure.com/Michael-Rausch/michaelrausch.nz/_build/latest?definitionId=1)
+
+
 Demo: http://michaelrausch.nz
-https://jira.michaelrausch.nz/projects/MRNZWEB/issues
 
 ## Installation
 1. Install [NodeJS & NPM](https://nodejs.org/en/)
