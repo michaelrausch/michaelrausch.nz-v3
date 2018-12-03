@@ -24,8 +24,7 @@ steps:
   inputs:
     sourceFolder: $(Agent.TempDirectory)
     Contents: |
-      environment.ts
-      environemts.prod.ts
+      environment
     TargetFolder: '$(Build.SourcesDirectory)/src/environments'
 
 - script: |
