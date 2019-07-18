@@ -7,10 +7,14 @@ nav{
 
 .nav-link {
     color: white !important;
-    font-family: 'Work Sans',  sans-serif;
-    font-weight: 500;
+    font-family: 'Montserrat',  sans-serif;
+    font-weight: 600;
     font-size: 18px;
     margin-right: 20px;
+}
+
+.nav-link:hover {
+    text-shadow: 3px 3px 0px rgba(146, 146, 146, 0.836);
 }
 
 @media only screen and (max-width: 770px) {
