@@ -1,6 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-
-
 .left{
     float: left;
 }
@@ -139,3 +137,33 @@ h5{
     background-color: rgb(255, 0, 43);
     color: white;
 }
+
+/* body, html {
+    background-color: rgb(0, 0, 0);
+}
+
+h2 {
+    color: white !important;
+}
+
+p {
+    color: white !important;
+}
+
+.link {
+    color: white !important;
+}
+
+.project-card {
+    background-color: #242424;
+}
+
+.project-card h3 {
+    color: white;
+}
+
+.card-button {
+    background-color: #3b3b3b !important;
+    border-color: #6b7c93;
+    color: #6b7c93 !important;
+} */
