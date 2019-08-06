@@ -52,7 +52,7 @@ import { PdfViewerComponent } from './components/pdf-viewer/pdf-viewer.component
 
 const routes: Routes = [
   { path: '', component: AboutPageComponent},
-  { path: 'resume', component: ResumePageComponent},
+  { path: 'cv', component: ResumePageComponent},
   { path: 'contact', component: ContactPageComponent},
   { path: 'home', component: HomePageComponent},
   { path: 'project/hard-times', component: ProjectPageComponent},
