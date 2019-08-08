@@ -21,9 +21,12 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/leaflet/leaflet.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/leaflet/leaflet.js"
+            ]
           },
           "configurations": {
             "production": {

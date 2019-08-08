@@ -50,6 +50,7 @@ import { Error404Component } from './pages/Error404/Error404.component';
 import { EmployerPageComponent } from './pages/employer-page/employer-page.component';
 import { PdfViewerComponent } from './components/pdf-viewer/pdf-viewer.component';
 import { CtaPopupComponent } from './components/cta-popup/cta-popup.component';
+import { MapComponent } from './components/map/map.component';
 
 const routes: Routes = [
   { path: '', component: AboutPageComponent},
@@ -103,7 +104,8 @@ const routes: Routes = [
     Error404Component,
     EmployerPageComponent,
     PdfViewerComponent,
-    CtaPopupComponent
+    CtaPopupComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,

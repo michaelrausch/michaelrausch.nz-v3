@@ -1,17 +1,18 @@
 .card-button{
     background-color: #fff;
-    color: #324de6 !important;
-    border-color: #324de6;
+    color: #0095FF !important;
+    border-color: #0095FF;
     font-family: 'Montserrat',  sans-serif;
     font-weight: 600;
+    font-size: 16px;
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    border-width: 2px;
+    border-width: 3px;
 }
 
 .card-button:hover{
-    background-color: #324de6;
+    background-color: #0095FF;
     color: #fff !important;
     /* border-color: #2a4bfe; */
     padding-left: 20px;
