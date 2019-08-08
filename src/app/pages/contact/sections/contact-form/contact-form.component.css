@@ -14,11 +14,11 @@ input, textarea{
     border: none;
     box-shadow: inset 0 1px 5px rgba(50, 50, 50, 0.062);
     transition: box-shadow .3s, background-color .3s;  
-    border-radius: 10px;
+    border-radius: 5px;
     min-height: 40px;
     font: 'Montserrat', 'serif';
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 input:focus, textarea:focus{

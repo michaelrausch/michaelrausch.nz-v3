@@ -49,6 +49,7 @@ import { YoutubeEmbedComponent } from './components/youtube-embed/youtube-embed.
 import { Error404Component } from './pages/Error404/Error404.component';
 import { EmployerPageComponent } from './pages/employer-page/employer-page.component';
 import { PdfViewerComponent } from './components/pdf-viewer/pdf-viewer.component';
+import { CtaPopupComponent } from './components/cta-popup/cta-popup.component';
 
 const routes: Routes = [
   { path: '', component: AboutPageComponent},
@@ -101,7 +102,8 @@ const routes: Routes = [
     YoutubeEmbedComponent,
     Error404Component,
     EmployerPageComponent,
-    PdfViewerComponent
+    PdfViewerComponent,
+    CtaPopupComponent
   ],
   imports: [
     BrowserModule,
