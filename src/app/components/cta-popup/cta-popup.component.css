@@ -1,0 +1,59 @@
+.popup {
+    width: 350px;
+    height: 100px;
+    position: fixed;
+    bottom: 20px;
+    right: -190px;
+    right: 80px;
+    transition: 0.3s;
+}
+
+.image {
+    background-color: rgb(34, 34, 34);
+    height: 100px;
+    width: 100px;
+    clip-path: circle(50px at center);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.image img {
+    height: 65px;
+    margin-top: 15px;
+    margin-left: 15px;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: 2;
+    transform-origin: 70% 70%;
+  
+}
+
+.text {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    font-family: 'Montserrat',  sans-serif;
+    top: 10px;
+    left: 50px;
+    z-index: -1;
+    padding-left: 60px;
+    padding-top: 6px;
+    padding-right: 5px;
+    font-size: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.heading {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.close  {
+    position: absolute;
+    right: -40px;
+    top: 17px;
+    color: white;
+    cursor: pointer;
+}

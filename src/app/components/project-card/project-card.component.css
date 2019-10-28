@@ -1,16 +1,18 @@
 .card-button{
     background-color: #fff;
-    color: #2a4bfe !important;
-    /* border-color: #2a4bfe; */
-    font-family: 'Work Sans',  sans-serif;
-    font-weight: 500;
+    color: #0095FF !important;
+    border-color: #0095FF;
+    font-family: 'Montserrat',  sans-serif;
+    font-weight: 600;
+    font-size: 16px;
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    border-width: 3px;
 }
 
 .card-button:hover{
-    background-color: #2a4bfe;
+    background-color: #0095FF;
     color: #fff !important;
     /* border-color: #2a4bfe; */
     padding-left: 20px;
@@ -23,7 +25,7 @@
 }
 
 p{
-    font-family: 'Work Sans',  sans-serif;
+    font-family: 'Montserrat',  sans-serif;
     color: #6b7c93;
     font-weight: 500;
     font-size: 15px;
@@ -37,7 +39,7 @@ p{
 }
 
 .card-title{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 600;
 }

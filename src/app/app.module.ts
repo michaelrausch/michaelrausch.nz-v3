@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NguiMapModule} from '@ngui/map';
 import { MatomoModule } from 'ngx-matomo';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -47,10 +48,13 @@ import { ProjectModalComponent } from './components/project-modal/project-modal.
 import { YoutubeEmbedComponent } from './components/youtube-embed/youtube-embed.component';
 import { Error404Component } from './pages/Error404/Error404.component';
 import { EmployerPageComponent } from './pages/employer-page/employer-page.component';
+import { PdfViewerComponent } from './components/pdf-viewer/pdf-viewer.component';
+import { CtaPopupComponent } from './components/cta-popup/cta-popup.component';
+import { MapComponent } from './components/map/map.component';
 
 const routes: Routes = [
   { path: '', component: AboutPageComponent},
-  { path: 'resume', component: ResumePageComponent},
+  { path: 'cv', component: ResumePageComponent},
   { path: 'contact', component: ContactPageComponent},
   { path: 'home', component: HomePageComponent},
   { path: 'project/hard-times', component: ProjectPageComponent},
@@ -98,7 +102,10 @@ const routes: Routes = [
     ProjectModalComponent,
     YoutubeEmbedComponent,
     Error404Component,
-    EmployerPageComponent
+    EmployerPageComponent,
+    PdfViewerComponent,
+    CtaPopupComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
@@ -107,7 +114,8 @@ const routes: Routes = [
     HttpClientModule,
     NguiMapModule.forRoot({apiUrl: environment.google_maps_api_url}),
     ParticlesModule,
-    MatomoModule 
+    MatomoModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
