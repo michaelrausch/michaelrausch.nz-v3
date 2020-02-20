@@ -6,8 +6,8 @@
 
 <app-resume-section>
     <div class="cv-buttons">
-        <app-btn-large route="/cv" class="left" dark="true">Download <i class="fa fa-cloud-download"></i></app-btn-large>
-        <app-btn-large route="/contact" class="right" dark="true">Github <i class="fab fa-github"></i></app-btn-large>
+        <app-btn-large (click)="downloadCv()" class="left" dark="true">Download <i class="fa fa-cloud-download"></i></app-btn-large>
+        <app-btn-large (click)="openGithub()" class="right" dark="true">Github <i class="fab fa-github"></i></app-btn-large>
     </div>
 </app-resume-section>
 

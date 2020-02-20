@@ -112,7 +112,6 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     FormsModule,
     HttpClientModule,
-    NguiMapModule.forRoot({apiUrl: environment.google_maps_api_url}),
     ParticlesModule,
     MatomoModule,
     PdfViewerModule
