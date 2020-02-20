@@ -1,18 +1,18 @@
 export const environment = {
-    production: true,
+    production: false,
     api_url: "",
     google_maps_api_url: "",
     employer_content_url: "",
     cv_download: "",
     social: {
-      github: "",
-      linkedin: "",
-      facebook: "",
-      px500: "",
-      twitter: ""
+        github: "",
+        linkedin: "",
+        facebook: "",
+        px500: "",
+        twitter: ""
     },
     version: {
-      app: "",
-      api: ""
+        app: "",
+        api: ""
     }
-  }; 
+}; 

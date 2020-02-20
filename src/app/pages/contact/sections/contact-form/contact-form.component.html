@@ -2,7 +2,7 @@
 
 <app-alert [alertType]="alertClass" *ngIf="showError || showSuccess" alert-icon="">
   <div *ngIf="showError && !showValidationError">
-      Sorry {{ sendersName }}, i couldn't send your message, please email me instead.
+      Sorry {{ sendersName }}, there was an error sending your message. {{ errorMessage }}
   </div>
 
   <div *ngIf="showError && showValidationError">
@@ -16,7 +16,7 @@
 
 </app-alert>
 
-<form #contactForm="ngForm" (ngSubmit)="onSubmit()">
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
   <div class="form-group">
     <label for="nameInput">Name</label>
     <input type="text" class="form-control invalid" placeholder="Joe Bloggs" id="nameInput" name="name" [(ngModel)]="name" #nameInput="ngModel" required="">

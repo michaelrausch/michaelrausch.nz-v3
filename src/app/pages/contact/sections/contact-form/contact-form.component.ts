@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from '../../../../../environments/environment';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-form',
@@ -15,6 +16,7 @@ export class ContactFormComponent implements OnInit {
   name: string = "";
   email: string = "";
   message: string = ""; 
+  errorMessage: string = "";
 
   sendersName: string = ""; // The senders name, retained after the form is cleared
   
@@ -34,21 +36,24 @@ export class ContactFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(){
+  onSubmit(form: NgForm){
     this.sendingMessage = true;
     this.showValidationError = false;
     this.showError = false;
+    this.errorMessage = "";
     
     this.setSendersName();
     this.startTimeout();
 
-    this.http.post<ContactFormResponse>(environment.api_url, {
-      fromEmail: this.email,
-      name: this.name,
-      message: this.message
-    }).subscribe((response) => {
+    let formData: FormData = new FormData();
+    formData.append('name', this.name);
+    formData.append('email', this.email);
+    formData.append('message', this.message);
 
-      if (response.error && response.result === "Validation Error") {
+    this.http.post(environment.api_url, formData, {responseType: 'text'}).subscribe((response) => {
+      console.log(response);
+
+      if (response && response === "Validation Error") {
         this.showValidationError = true;
         this.setFail()
       }
@@ -58,7 +63,13 @@ export class ContactFormComponent implements OnInit {
       }
 
       this.sendingMessage = false
-    }, () => {
+      form.reset();
+    }, (err) => {
+      if (err.status === 429) {
+        this.errorMessage = "You have submitted too many requests, please try again later."
+      }
+
+      console.log(err);
       this.setFail();
       this.sendingMessage = false
     })
@@ -107,9 +118,4 @@ export class ContactFormComponent implements OnInit {
     this.name = ""
     this.message = ""
   }
-}
-
-interface ContactFormResponse{ 
-  error: boolean;
-  result: string;
 }
