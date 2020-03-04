@@ -3,63 +3,57 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { NguiMapModule} from '@ngui/map';
-import { MatomoModule } from 'ngx-matomo';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 import { AppComponent } from './app.component';
-import { MenuComponent } from './components/menu/menu.component';
-import { JumbotronComponent } from './pages/about/components/jumbotron/jumbotron.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { AboutSectionComponent } from './pages/about/components/about-section/about-section.component';
-import { CurrentProjectsComponent } from './pages/about/components/current-projects/current-projects.component';
-import { ProjectCardComponent } from './components/project-card/project-card.component';
-import { CtaSectionComponent } from './pages/about/components/cta-section/cta-section.component';
-import { AboutPageComponent } from './pages/about/about-page/about-page.component';
-import { ResumePageComponent } from './pages/resume/resume-page/resume-page.component';
-import { PageHeaderComponent } from './components/page-header/page-header.component';
-import { ContactPageComponent } from './pages/contact/contact-page/contact-page.component';
-import { ContactFormComponent } from './pages/contact/sections/contact-form/contact-form.component';
-import { ContactInfoComponent } from './pages/contact/sections/contact-info/contact-info.component';
-import { BtnLargeComponent } from './components/buttons/btn-large/btn-large.component';
-import { ResumeSectionComponent } from './pages/resume/components/resume-section/resume-section.component';
-import { ResumeSectionHeaderComponent } from './pages/resume/components/resume-section-header/resume-section-header.component';
-import { ResumeSectionBlurbComponent } from './pages/resume/components/resume-section-blurb/resume-section-blurb.component';
-import { ResumeSectionContentWithGlyphComponent } from './pages/resume/components/resume-section-content-with-glyph/resume-section-content-with-glyph.component';
-import { AboutComponent } from './pages/resume/sections/about/about.component';
-import { EducationComponent } from './pages/resume/sections/education/education.component';
-import { SkillsComponent } from './pages/resume/sections/skills/skills.component';
-import { FeaturedProjectsComponent } from './pages/resume/sections/featured-projects/featured-projects.component';
-import { ResumeCtaComponent } from './pages/resume/sections/resume-cta/resume-cta.component';
-import { ContactItemComponent } from './pages/contact/components/contact-item/contact-item.component';
-import { AlertComponent } from './components/alert/alert.component';
+import { MenuComponent } from './shared/menu/menu.component';
+import { JumbotronComponent } from './about/components/jumbotron/jumbotron.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { AboutSectionComponent } from './about/components/about-section/about-section.component';
+import { CurrentProjectsComponent } from './about/components/current-projects/current-projects.component';
+import { ProjectCardComponent } from './shared/project-card/project-card.component';
+import { CtaSectionComponent } from './about/components/cta-section/cta-section.component';
+import { AboutPageComponent } from './about/about-page/about-page.component';
+import { ResumePageComponent } from './resume/resume-page/resume-page.component';
+import { PageHeaderComponent } from './shared/page-header/page-header.component';
+import { ContactPageComponent } from './contact/contact-page/contact-page.component';
+import { ContactFormComponent } from './contact/components/contact-form/contact-form.component';
+import { ContactInfoComponent } from './contact/components/contact-info/contact-info.component';
+import { BtnLargeComponent } from './shared/btn-large/btn-large.component';
+import { ResumeSectionComponent } from './resume/components/resume-section/resume-section.component';
+import { ResumeSectionHeaderComponent } from './resume/components/resume-section-header/resume-section-header.component';
+import { ResumeSectionBlurbComponent } from './resume/components/resume-section-blurb/resume-section-blurb.component';
+import { ResumeSectionContentWithGlyphComponent } from './resume/components/resume-section-content-with-glyph/resume-section-content-with-glyph.component';
+import { EducationComponent } from './resume/components/education/education.component';
+import { SkillsComponent } from './resume/components/skills/skills.component';
+import { FeaturedProjectsComponent } from './resume/components/featured-projects/featured-projects.component';
+import { ResumeCtaComponent } from './resume/components/resume-cta/resume-cta.component';
+import { AlertComponent } from './shared/alert/alert.component';
 import { environment } from '../environments/environment';
-import { SocialIconComponent } from './pages/contact/sections/social-icon/social-icon.component';
-import { HomePageComponent } from './pages/home/home-page/home-page.component';
-import { GoogleSearchComponent } from './pages/home/components/google-search/google-search.component';
-import { WidgetComponent } from './pages/home/components/widget/widget.component';
-import { ProjectPageComponent } from './pages/project/project-page/project-page.component';
-import { CtaBlockComponent } from './pages/project/components/cta-block/cta-block.component';
-import { ShowcaseImageWideComponent } from './pages/project/components/showcase-image-wide/showcase-image-wide.component';
+import { SocialIconComponent } from './contact/components/social-icon/social-icon.component';
+import { HomePageComponent } from './homepage/home-page/home-page.component';
+import { WidgetComponent } from './homepage/components/widget/widget.component';
+import { CtaBlockComponent } from './shared/cta-block/cta-block.component';
+import { ShowcaseImageWideComponent } from './shared/showcase-image-wide/showcase-image-wide.component';
 
 import { ParticlesModule } from 'angular-particle';
-import { Seng404BlogPostComponent } from './pages/project/project-pages/seng404-blog-post/seng404-blog-post.component';
-import { ProjectModalComponent } from './components/project-modal/project-modal.component';
-import { YoutubeEmbedComponent } from './components/youtube-embed/youtube-embed.component';
-import { Error404Component } from './pages/Error404/Error404.component';
-import { EmployerPageComponent } from './pages/employer-page/employer-page.component';
-import { PdfViewerComponent } from './components/pdf-viewer/pdf-viewer.component';
-import { CtaPopupComponent } from './components/cta-popup/cta-popup.component';
-import { MapComponent } from './components/map/map.component';
+import { ProjectModalComponent } from './shared/project-modal/project-modal.component';
+import { YoutubeEmbedComponent } from './shared/youtube-embed/youtube-embed.component';
+import { Error404Component } from './Error404/Error404.component';
+import { CustomLandingPage } from './custom-landing/custom-landing-page/custom-landing-page.component';
+import { PdfViewerComponent } from './shared/pdf-viewer/pdf-viewer.component';
+import { CtaPopupComponent } from './shared/cta-popup/cta-popup.component';
+import { MapComponent } from './shared/map/map.component';
+import { ContactItemComponent } from './contact/components/contact-item/contact-item.component';
+import { ContactService } from './services/contact.service';
+import { GoogleSearchComponent } from './homepage/components/google-search/google-search.component';
 
 const routes: Routes = [
   { path: '', component: AboutPageComponent},
   { path: 'cv', component: ResumePageComponent},
   { path: 'contact', component: ContactPageComponent},
   { path: 'home', component: HomePageComponent},
-  { path: 'project/hard-times', component: ProjectPageComponent},
-  { path: 'project/requirements-blog-post', component: Seng404BlogPostComponent},
-  { path: 'e/:id', component: EmployerPageComponent },
+  { path: 'c/:id', component: CustomLandingPage },
   { path: "**", component: Error404Component}
 ]
 
@@ -84,7 +78,6 @@ const routes: Routes = [
     ResumeSectionHeaderComponent,
     ResumeSectionBlurbComponent,
     ResumeSectionContentWithGlyphComponent,
-    AboutComponent,
     EducationComponent,
     SkillsComponent,
     FeaturedProjectsComponent,
@@ -95,14 +88,12 @@ const routes: Routes = [
     HomePageComponent,
     GoogleSearchComponent,
     WidgetComponent,
-    ProjectPageComponent,
     CtaBlockComponent,
     ShowcaseImageWideComponent,
-    Seng404BlogPostComponent,
     ProjectModalComponent,
     YoutubeEmbedComponent,
     Error404Component,
-    EmployerPageComponent,
+    CustomLandingPage,
     PdfViewerComponent,
     CtaPopupComponent,
     MapComponent
@@ -113,10 +104,9 @@ const routes: Routes = [
     FormsModule,
     HttpClientModule,
     ParticlesModule,
-    MatomoModule,
-    PdfViewerModule
+    PdfViewerModule,
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

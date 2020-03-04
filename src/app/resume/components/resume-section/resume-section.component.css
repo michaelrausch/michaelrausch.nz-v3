@@ -1,0 +1,16 @@
+.resume-section-root .container p{
+    font-family: 'Montserrat',  sans-serif;
+    color: #6b7c93;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 35px;
+}
+
+.resume-section-root .container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.odd{
+    background-color: rgba(50,50,50,0.06);
+}

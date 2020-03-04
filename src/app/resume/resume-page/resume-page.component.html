@@ -1,0 +1,19 @@
+<app-page-header headerText="Michael Rausch" showDrop="true"></app-page-header>
+
+<app-resume-section>
+    <app-pdf-viewer></app-pdf-viewer>
+</app-resume-section>
+
+<app-resume-section>
+    <div class="cv-buttons">
+        <app-btn-large (click)="downloadCv()" class="left" dark="true">Download <i class="fa fa-cloud-download"></i></app-btn-large>
+        <app-btn-large (click)="openGithub()" class="right" dark="true">Github <i class="fab fa-github"></i></app-btn-large>
+    </div>
+</app-resume-section>
+
+
+<app-resume-featured-projects></app-resume-featured-projects>
+
+<app-resume-cta></app-resume-cta>
+
+<div class="bottom-pad"></div>                    

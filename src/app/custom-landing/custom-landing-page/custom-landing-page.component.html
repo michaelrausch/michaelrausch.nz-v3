@@ -1,0 +1,30 @@
+<app-page-header [(headerText)]="content.name"></app-page-header>
+
+<div class="container">
+  <h1>Hi there!</h1> 
+  <p>
+    {{ content.welcome_content }}
+  </p>
+
+  <div class="section" *ngIf="content.downloads && content.downloads.length > 0">
+      <h3>Downloads</h3>
+
+      <a class="download_link" *ngFor="let download of content.downloads" target="_" [href]="download.href"> {{ download.name }} <i class="fa fa-download" aria-hidden="true"></i>      </a>
+  </div>
+
+  <div class="section" *ngIf="content.links && content.links.length > 0">
+      <h3>Links</h3>
+
+      <a class="download_link" *ngFor="let link of content.links" target="_" [href]="link.href"> {{ link.name }} <i class="fa fa-link" aria-hidden="true"></i></a>
+  </div>
+
+  <div class="section" *ngIf="content.projects && content.projects.length > 0">
+      <h3>Projects</h3>
+
+      <div class="project" *ngFor="let project of content.projects">
+          <b>{{ project.name }}</b>
+          <p> {{ project.desc }}</p>
+          <a [href]="project.href">See More</a>
+      </div>    
+  </div>
+</div>
