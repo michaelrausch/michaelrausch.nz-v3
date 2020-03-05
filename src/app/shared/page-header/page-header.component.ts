@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Location } from '@angular/common'; 
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-header',
@@ -10,9 +12,13 @@ export class PageHeaderComponent implements OnInit {
   @Input() theme;
   @Input() showDrop;
   
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  backClicked() {
+    this.router.navigateByUrl('');
   }
 
 }

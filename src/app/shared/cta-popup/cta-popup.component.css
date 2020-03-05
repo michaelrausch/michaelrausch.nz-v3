@@ -61,8 +61,6 @@
 
 @media only screen and (max-width: 995px) {
     .popup {
-        width: 0;
-        height: 0;
-        visibility: hidden;
+        display: none;
     }
 }

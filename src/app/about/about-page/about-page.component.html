@@ -1,8 +1,18 @@
 <app-jumbotron></app-jumbotron>
 
-<app-about-section></app-about-section>
+<h2>About Me</h2>
+<p>Hi! I'm Michael, a junior software engineer based in Christchurch, New Zealand. I'm a graduate of the University of Canterbury, with a B.Sc in Computer Science. I'm currently seeking full-time employment in either Christchurch, Wellington, or Brisbane.</p>
 
-<h2>What I've Been Working On</h2>
+<div class="mobile-nav">
+    <div class="mobile-nav-btn">
+        <app-btn-large route="/cv" class="mobile-nav-btn" dark="true">CV</app-btn-large>
+    </div>
+    <div class="mobile-nav-btn">
+        <app-btn-large route="/contact" class="mobile-nav-btn" dark="true">Contact</app-btn-large>
+    </div>
+</div>
+
+<h2>What I've Been Up To</h2>
 
 <div class="container">
     <app-current-projects></app-current-projects>     

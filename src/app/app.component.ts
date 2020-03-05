@@ -3,6 +3,8 @@ import { Router, NavigationEnd } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
 
+declare let ga: Function;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,23 +15,19 @@ export class AppComponent {
 
   constructor(private router: Router, 
         private http: HttpClient){
-
-    const url = `//piwik.michaelrausch.nz/`; 
-    const id = 1; // Site Id
-  }
-
-  printVersionInfo(){
   }
 
   ngOnInit() {
     this.router.events.subscribe((evt) => {
         if (!(evt instanceof NavigationEnd)) {
-            return;
+          return;
         }
+
+        ga('set', 'page', evt.urlAfterRedirects);
+        ga('send', 'pageview');
         
         window.scrollTo(0, 0)
     });
 
-    this.printVersionInfo();
 }
 }

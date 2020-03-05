@@ -63,15 +63,6 @@ a:visited, a:active {
 
 @media only screen and (max-width: 995px) {
     .right {
-        width: 0;
-        height: 0;
-        visibility: hidden;
-    }
-}
-
-@media only screen and (max-width: 575px)  {
-    footer {
-        width: 0px;
-        visibility: hidden;
+        display: none;
     }
 }

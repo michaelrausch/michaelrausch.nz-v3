@@ -9,3 +9,18 @@
 .cv-buttons app-btn-large{
     width: 270px;
 }
+
+@media only screen and (max-width: 770px) {
+    app-resume-cta{
+        display: none;
+    }
+
+    .cv-buttons {
+        display: none;
+    }
+
+    .bottom-pad {
+        padding-bottom: 0;
+    }
+}
+

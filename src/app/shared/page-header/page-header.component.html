@@ -1,4 +1,7 @@
 <div class="page-header">
   <div class="drop" [hidden]="!showDrop"></div>
   <h1>{{ headerText || "Header"}}</h1>
+  <button class="back-button" (click)="backClicked()">
+    <i class="fas fa-home"></i>
+  </button>
 </div>

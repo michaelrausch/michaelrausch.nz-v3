@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { JumbotronComponent } from './about/components/jumbotron/jumbotron.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { AboutSectionComponent } from './about/components/about-section/about-section.component';
 import { CurrentProjectsComponent } from './about/components/current-projects/current-projects.component';
 import { ProjectCardComponent } from './shared/project-card/project-card.component';
 import { CtaSectionComponent } from './about/components/cta-section/cta-section.component';
@@ -63,7 +62,6 @@ const routes: Routes = [
     MenuComponent,
     JumbotronComponent,
     FooterComponent,
-    AboutSectionComponent,
     CurrentProjectsComponent,
     ProjectCardComponent,
     CtaSectionComponent,
