@@ -118,29 +118,37 @@ h5{
     Custom Badge Styles
 **/
 
-.badge-learning {
-    background-color: rgb(255, 193, 7);
+.badge{
+    margin-bottom: 7px;
+    margin-top: 5px;
+    text-transform: capitalize;
+    padding: 5px 10px 6px 10px;
+    box-shadow:  5px 5px 9px #f0f0f0, 
+             -5px -5px 9px #ffffff;
+
     color: white;
+
+
+}
+
+.badge-learning {
+    background: linear-gradient(145deg, #e6ae06, #ffcf07);
 }
 
 .badge-project{
     background-color: rgb(221, 138, 13);
-    color: white;
 }
 
 .badge-group-project{
-    background-color: rgb(40, 167, 68);
-    color: white;
+    background: linear-gradient(145deg, #24963d, #2bb349);
 }
 
 .badge-assignment{
-    background-color: rgb(0, 123, 255);
-    color: white;
+    background: linear-gradient(145deg, #006fe6, #0084ff);
 }
 
 .badge-reading{
-    background-color: rgb(255, 0, 43);
-    color: white;
+    background: linear-gradient(145deg, #e60027, #ff002e);
 }
 
 /* body, html {

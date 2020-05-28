@@ -3,6 +3,7 @@
     color: #0095FF !important;
     border-color: #0095FF;
     font-family: 'Montserrat',  sans-serif;
+    
     font-weight: 600;
     font-size: 16px;
     border-radius: 20px;
@@ -14,9 +15,6 @@
 .card-button:hover{
     background-color: #0095FF;
     color: #fff !important;
-    /* border-color: #2a4bfe; */
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .card-button:focus {
@@ -24,36 +22,64 @@
     box-shadow: 0px;
 }
 
+.neu-btn {
+    border: none;
+    font-size: 16px;
+    font-family: 'Montserrat', 'serif';
+    font-weight: 600;
+    
+    color: white;
+    border-radius: 5px;
+    color: #0296FF !important;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  8px 8px 16px #dbdbdb, 
+    -8px -8px 16px #ffffff;
+    transition: color .2s;  
+    cursor: pointer;
+}
+
+.neu-btn:hover{ 
+    background: #0296FF;
+    color: white !important;
+    background: linear-gradient(145deg, #02a1ff, #0287e6);
+}
+
 p{
-    font-family: 'Montserrat',  sans-serif;
     color: #6b7c93;
-    font-weight: 500;
     font-size: 15px;
     line-height: 25px;
+
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+
 }
 
 .project-card{
     border-radius: 10px;
     box-shadow: 0 3px 30px rgba(50, 50, 50, 0.2);   
-        
+    border: none;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #fafafa;
+    box-shadow:  16px 16px 32px #dfdfdf, 
+                 -16px -16px 32px #ffffff;
+    
+    
 }
 
 .card-title{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h3{
     margin-bottom: 2px !important;
 }
 
-.badge{
-    margin-bottom: 7px;
-    text-transform: capitalize;
-}
+
 
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-    -webkit-transform: scale(1.04);
-    transform: scale(1.04);
+    -webkit-transform: scale(1.0);
+    transform: scale(1.00);
 }

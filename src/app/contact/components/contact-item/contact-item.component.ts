@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./contact-item.component.css']
 })
 export class ContactItemComponent implements OnInit {
-  @Input() icon;
+  @Input() title;
 
   constructor() { }
 

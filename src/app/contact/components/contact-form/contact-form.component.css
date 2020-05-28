@@ -10,11 +10,22 @@ label{
 }
 
 input, textarea{
-    background-color: #f2f4f49f;
+    /* background-color: #f2f4f49f;
     border: none;
     box-shadow: inset 0 1px 5px rgba(50, 50, 50, 0.062);
     transition: box-shadow .3s, background-color .3s;  
     border-radius: 5px;
+    min-height: 40px;
+    font: 'Montserrat', 'serif';
+    font-size: 17px;
+    font-weight: 500; */
+
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: inset 10px 10px 29px #f2f2f2, 
+                inset -10px -10px 29px #ffffff;
+    transition: box-shadow .3s, background-color .3s;  
     min-height: 40px;
     font: 'Montserrat', 'serif';
     font-size: 17px;
@@ -25,6 +36,13 @@ input:focus, textarea:focus{
     background-color: #f2f4f4;
     border: none;
     box-shadow: inset 0 3px 5px rgba(50, 50, 50, 0.1);
+
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+box-shadow: inset 10px 10px 29px #e8e8e8, 
+            inset -10px -10px 29px #ffffff;
+
 }
 
 .btn-primary {
@@ -47,6 +65,7 @@ input:focus, textarea:focus{
     border-color: gray;
     background-color: white;
     color: gray;
+
 }
 
 small {
@@ -54,4 +73,27 @@ small {
     font-size: 15px;
     font-weight: 600;
     color: rgba(221, 53, 31, 0.836) !important;
+}
+
+.neu-btn {
+    border: none;
+    font-size: 17px;
+    font-family: 'Montserrat', 'serif';
+    font-weight: 700;
+    
+    height: 45px;
+    min-width: 110px;
+    color: white;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #0287e6, #02a1ff);
+
+    box-shadow:  8px 8px 16px #dedede, 
+    -8px -8px 16px #ffffff;
+    cursor: pointer;
+}
+
+.neu-btn:disabled {
+    border-color: gray;
+    background: rgb(228, 228, 228);
+    color: gray;
 }
