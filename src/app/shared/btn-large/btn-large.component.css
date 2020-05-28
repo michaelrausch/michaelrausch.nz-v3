@@ -20,14 +20,13 @@ a {
 
     /* transition: color .3s, background-color .3s; */
     cursor: pointer;
-
 }
 
 a:hover{
-    color: black !important;
+    /* color: black !important;
     border-color: white;
     background-color: white;
-    text-decoration: none;
+    text-decoration: none; */
 }
 
 .dark {

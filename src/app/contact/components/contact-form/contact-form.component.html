@@ -1,5 +1,3 @@
-<h3>Let's talk</h3>
-
 <app-alert [alertType]="alertClass" *ngIf="showError || showSuccess" alert-icon="">
   <div *ngIf="showError && !showValidationError">
       Sorry {{ sendersName }}, there was an error sending your message. {{ errorMessage }}
@@ -45,7 +43,7 @@
       </small>
   </div>
 
-  <button type="submit" class="btn btn-primary" [disabled]="!contactForm.form.valid || sendingMessage">
+  <button type="submit" class="btn btn-primary neu-btn" [disabled]="!contactForm.form.valid || sendingMessage">
     <div *ngIf="!sendingMessage">Send</div> 
 
     <div *ngIf="sendingMessage">

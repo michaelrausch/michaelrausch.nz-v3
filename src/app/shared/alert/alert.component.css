@@ -10,11 +10,20 @@
     background-color: #75C7B6;
     border-color: #75C7B6;
     color: white;
+
+    border-radius: 5px;
+    background: #75C7B6;
+
+    box-shadow:  8px 8px 16px #dedede, 
+    -8px -8px 16px #ffffff;
 }
 
 .alert-danger {
     background-color: #EC768C;
     border-color: #EC768C;
     color: white;
+    box-shadow:  8px 8px 16px #dedede, 
+    -8px -8px 16px #ffffff;
+
 }
 

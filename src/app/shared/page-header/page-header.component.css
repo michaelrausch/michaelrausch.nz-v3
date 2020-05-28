@@ -1,7 +1,7 @@
 .page-header{
     height: 115px;
     padding-top: 30px;
-    box-shadow: 0 3px 70px rgba(50, 50, 50, 0.5);   
+    box-shadow: 0 5px 30px rgba(50, 50, 50, 0.25);   
         
     /* background-image: linear-gradient(to right bottom, #0090ff, #009cff, #00a7ff, #00b2ff, #00bcff);
     background-image: linear-gradient(to right bottom, #007aff, #0086ff, #0091ff, #009cff, #00a6ff); */
@@ -11,8 +11,12 @@
     background: -webkit-linear-gradient(to right, rgb(72, 228, 255), #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, rgb(72, 188, 255), #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-}
+    background-image: linear-gradient( 135deg, #3C8CE7 10%, #00EAFF 100%);
+    
 
+
+
+}
 h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 900; 
@@ -38,8 +42,8 @@ h1{
     background-position-y: -500px; */
 
     background: #0673c7;
-    background-image: url('../../../assets/images/bgs.jpg');
-    background-position-y: -200px;
+    background-image: url('../../../assets/images/bg3.jpg');
+    background-position-y: -350px;
 }
 
 

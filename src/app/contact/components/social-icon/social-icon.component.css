@@ -1,6 +1,22 @@
+.social-icon {
+    display: block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    float: left;
+    margin-right: 15px;
+    padding-top: 5px;
+
+    border-radius: 15px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  10px 10px 20px #ededed, 
+    -10px -10px 20px #ffffff;
+
+}
+
 span{
     font-size: 30px;
-    padding-right: 20px;
     cursor: pointer;
 }
 
